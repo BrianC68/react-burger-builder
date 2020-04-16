@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Auxi from '../../hoc/Auxi';
+import Auxi from '../../hoc/Auxi/Auxi';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -15,6 +15,7 @@ const INGREDIENT_PRICES = {
 }
 
 class BurgerBuilder extends Component {
+    // Old Way!!!!!!!!!!!!!!!!
     // constructor(props) {
     //     super(props);
     //     this.state = {
