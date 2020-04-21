@@ -6,12 +6,9 @@ const order = (props) => {
     const ingredients = [];
 
     for (let ingredientName in props.ingredients) {
-        if (ingredientName === 'asalad') {
-            ingredientName = 'salad';
-        }
         ingredients.push(
             {
-                name: ingredientName, 
+                name: ingredientName === 'asalad' ? 'salad' : ingredientName, 
                 amount: props.ingredients[ingredientName]
             });
     }
