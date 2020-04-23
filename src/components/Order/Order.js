@@ -21,7 +21,8 @@ const order = (props) => {
             margin: '0 8px',
             border: '1px solid #cccccc',
             padding: '5px'
-        }}>{ig.name} ({ig.amount}) </span>
+        }}
+        key={ig.name}>{ig.name} ({ig.amount})</span>
     });
 
     return (
