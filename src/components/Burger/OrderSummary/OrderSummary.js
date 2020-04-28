@@ -4,9 +4,6 @@ import Auxi from '../../../hoc/Auxi/Auxi';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
-    // componentDidUpdate() {
-    //     console.log('OrderSummary.js => componentDidUpdate()')
-    // }
     render () {
 
         const ingredientSummary = Object.keys(this.props.ingredients)
